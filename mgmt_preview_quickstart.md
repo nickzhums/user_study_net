@@ -110,7 +110,7 @@ We can use the Resource client (``Azure.Management.Resources.ResourcesManagement
 ***Create a resource group***
 
 ```csharp
-    var location = "uswest2";
+    var location = "westus2";
     var resourceGroupName = "myResourceGroupName";
     var resourceGroup = new ResourceGroup(location);
     resourceGroup = await resourceGroupsClient.CreateOrUpdateAsync(resourceGroupName, resourceGroup);
